@@ -12,5 +12,6 @@ MAINTAINER [Prateek Gogia <@prateekgogia>]
 RUN apk add --update \
     tcpdump \
     iproute2 \
+    nmap \
     curl \
-  
+    libcap-ng-utils  
