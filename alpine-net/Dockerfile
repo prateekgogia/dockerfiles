@@ -10,8 +10,12 @@ MAINTAINER [Prateek Gogia <@prateekgogia>]
 	# wget
 
 RUN apk add --update \
+    bash \
     tcpdump \
     iproute2 \
     nmap \
     curl \
     libcap-ng-utils  
+COPY run.sh /run.sh
+
+ENTRYPOINT ["/run.sh"]
