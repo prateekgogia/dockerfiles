@@ -15,7 +15,8 @@ RUN apk add --update \
     iproute2 \
     nmap \
     curl \
-    libcap-ng-utils  
+    libcap-ng-utils \
+    bind-tools
 COPY run.sh /run.sh
 
-ENTRYPOINT ["/run.sh"]
+CMD ["/run.sh"]
