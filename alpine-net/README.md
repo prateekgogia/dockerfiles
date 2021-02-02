@@ -9,3 +9,7 @@ To debug networking for any container run the following command and it will atta
 ```
 docker run -ti --net=container:<nameOrID> prateekgogia/alpine-net sh
 ```
+
+```
+kubectl run -ti --image=prateekgogia/alpine-net net --command sh
+```
